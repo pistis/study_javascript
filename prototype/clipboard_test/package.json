@@ -1,0 +1,28 @@
+{
+  "name": "prototype_clipboard",
+  "version": "1.0.0",
+  "description": "javascirpt로 하는 OS의 clipboard access 프로토타이핑",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "watch": "webpack --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pistis/prototype_clipboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.18.0",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}

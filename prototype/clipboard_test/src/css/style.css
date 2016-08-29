@@ -1,0 +1,23 @@
+body {
+    font-size: 12pt;
+}
+
+#contents {
+    width: 800px;
+    height: 400px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#data {
+    width: 800px;
+    height: 200px;
+    border: 1px solid red;
+    margin-top: 20px;
+}
+
+.testMessage {
+    border: 1px solid black;
+    font-size: 14pt;
+    color: fuchsia;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "htmlparse",
+  "version": "1.0.0",
+  "description": "> HTML을 sanitize하고 parseing하여 의미있는 JSON형태의 모델을 추출해보자.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "webpack",
+    "watch": "webpack-dev-server --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.15.1",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.11"
+  },
+  "dependencies": {
+    "htmlparser2": "^3.8.3",
+    "jquery": "^2.1.4",
+    "json-loader": "^0.5.2",
+    "sanitize-html": "^1.7.0"
+  }
+}

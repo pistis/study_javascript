@@ -1,0 +1,23 @@
+{
+  "name": "study_reactjs",
+  "version": "1.0.0",
+  "description": "study reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pistis/study_reactjs.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pistis/study_reactjs/issues"
+  },
+  "homepage": "https://github.com/pistis/study_reactjs#readme"
+}

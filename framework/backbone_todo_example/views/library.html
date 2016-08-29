@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Backbone.js • LibraryMVC</title>
+    <link rel="stylesheet" href="../public_library/css/screen.css">
+</head>
+<body>
+<div id="books">
+    <form id="addBook" action="#">
+        <div>
+            <label for="coverImage">CoverImage: </label><input id="coverImage" type="file" />
+            <label for="title">Title: </label><input id="title" type="text" />
+            <label for="author">Author: </label><input id="author" type="text" />
+            <label for="releaseDate">Release date: </label><input id="releaseDate" type="text" />
+            <label for="keywords">Keywords: </label><input id="keywords" type="text" />
+            <button id="add">Add</button>
+        </div>
+    </form>
+    <div class="bookContainer">
+        <img src="../public_library/img/placeholder.png"/>
+        <ul>
+            <li>Title</li>
+            <li>Author</li>
+            <li>Release date</li>
+            <li>Keywords</li>
+        </ul>
+    </div>
+    <script id="bookTemplate" type="text/template">
+        <img src="<%= coverImage %>"/>
+        <ul>
+            <li><%= title %></li>
+            <li><%= author %></li>
+            <li><%= releaseDate %></li>
+            <li><%= keywords %></li>
+        </ul>
+        <button class="delete">Delete</button>
+    </script>
+</div>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js'></script>
+<script type='text/javascript' src='../public_library/js/app.js'></script>
+</body>
+</html>

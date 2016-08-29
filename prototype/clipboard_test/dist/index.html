@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Clipboard Access</title>
+</head>
+<body>
+
+<h2>Clipboard Events를 listening하여 원하는 값을 Clipboard에 설정하기</h2>
+<p>
+    아래의 메시지 내용을 자유롭게 선택하여(셀렉션) 복사/잘라내기 해본다.
+    <br />
+    단축키와 컨텍스트 메뉴로 실행한다.
+    <br />
+    노트패드 등 다른 애플리케이션에 붙여넣기 한다.
+</p>
+<blockquote class="testMessage">
+    <p>단축키(Ctrl+c,Ctrl+x) or 컨텍스트 메뉴의 복사/잘라내기가 수행될 때 이벤트리스너에서 클립보드에 원하는 값을 설정한다.</p>
+    <p>예) 'Test clipboard shortcuts/contextmenu Events'</p>
+    <p>다른 애플리케이션에 붙여넣기 하면 개발자가 지정한 'Test clipboard shortcuts/contextmenu Events' 문자열이 붙여넣기 됩니다.</p>
+</blockquote>
+
+<hr />
+
+<h2>document.execCommand를 이용하여 Copy, Cut, Paste하기</h2>
+<p>
+    아래 텍스트 편집 영역에서 메시지 내용을 자유롭게 편집, 그 후 선택하여(셀렉션) 복사/잘라내기 해본다.
+    <br />
+    Copy, Cut 버튼 클릭으로 실행한다.
+    <br />
+    노트패드 등 다른 애플리케이션에 붙여넣기 한다.
+    <br />
+    아래 텍스트 편집 영역에 포커싱 후 붙여넣기 해본다.
+    <br />
+    Paste 버튼 클릭으로 실행한다.
+</p>
+<div>
+    <button id="copy">Copy</button>
+    <button id="cut">Cut</button>
+    <button id="paste">Paste</button>
+</div>
+
+<div id="contents" contenteditable="true">
+    Copy, Cut 버튼을 클릭하면 선택한 문자열이 복사됩니다.<br />
+    Paste 버튼을 클릭하면 복사된 문자열이 붙여넣기됩니다.
+</div>
+
+<script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+</body>
+</html>
