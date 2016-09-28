@@ -15,7 +15,7 @@ var port = process.env.PORT || 8080;
 var Book = require('./models/book');
 
 // [CONFIGURE ROUTER]
-var router = require('./routes')(app, Book);
+var router = require('./routes/index')(app, Book);
 
 // CONNECT TO MONGODB SERVER
 var db = mongoose.connection;
