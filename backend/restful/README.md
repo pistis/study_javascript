@@ -7,3 +7,8 @@
 * mongodb 설치
 * mongodb_tutorial db 생성
 * node app.js
+
+## 설명
+* 서버에 RESTful API만 구현되어 있는 상태로 postman 등으로 테스트가 가능
+* express와 mongodb 연습
+* front는 없음
