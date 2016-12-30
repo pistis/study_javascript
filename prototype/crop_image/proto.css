@@ -1,0 +1,77 @@
+/*div {*/
+    /*border: 1px solid black;*/
+/*}*/
+
+/* layout */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.header {
+    padding: 10px;
+}
+
+.content {
+    clear : both;
+    width: 960px;
+    height: 720px;
+}
+
+.preview_list {
+    float : left;
+    width: 270px;
+    height: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+.edit {
+    float : right;
+    width: 670px;
+    height: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+.information {
+    clear : both;
+}
+
+.footer {
+    padding: 10px;
+    margin-top: 100px;
+}
+
+
+/* component */
+.preset {
+    float : left;
+    width:100px;
+    height:50px;
+}
+
+.original_size {
+    color : #39f;
+}
+
+.cropped_size {
+    color : orangered;
+}
+
+
+
+/* for cropper */
+.edit_area {
+    max-width: 640px;
+}
+
+.target_image {
+    max-width: 100%; /* This rule is very important, please do not ignore this! */
+}
+
+.image_preview {
+    width: 255px;
+    height: 143px;
+    margin: 5px;
+    overflow:hidden;
+    border: 1px solid #39f;
+}
