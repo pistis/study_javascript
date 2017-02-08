@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Data Binding</title>
+    <style>
+        .color-red {
+            color: red;
+        }
+        .color-blue {
+            color: blue;
+        }
+
+        .is-loading {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div id="root">
+    <button @click="method" v-bind:title="title">Hover Over Me</button>
+    <h1 :class="className">Hello World!~</h1>
+    <button :class="{ 'is-loading': isLoading }" @click="toggleClass">Toggle Me</button>
+</div>
+
+<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+
+<script>
+
+    var app = new Vue({
+        el : '#root',
+        data : {
+            isLoading : false,
+            className : 'color-red',
+            title: 'Now the title is being set through Javascript.'
+        },
+
+        methods : {
+            method() {
+                alert('HI');
+            },
+
+            toggleClass() {
+                this.isLoading = !this.isLoading;
+            }
+        }
+    });
+
+
+
+</script>
+</body>
+</html>
